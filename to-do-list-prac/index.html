@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="title">
+            <h1>My To-Do List</h1>
+            <h4>Organise your day...</h4>
+        </div>
+
+        <div class="input-box">
+            <input type="text" placeholder="Enter some task.." class="input">
+            <button class="button" onclick="addItem()">Add</button>
+        </div>
+
+        <div class="list">
+                 <!-- Tasks will be added here -->
+        </div>
+
+    </div>
+
+    <script>
+        function addItem(){
+            let input=document.querySelector('.input');
+            let inputValue =input.value.trim();
+
+            if(inputValue===''){
+                alert('Please enter a task');
+                return;
+            }
+            let p=document.createElement('p');
+            p.innerText= inputValue;
+            
+            let listDiv= document.querySelector('.list');
+            listDiv.appendChild(p);
+
+            input.value='';
+        }
+    </script>
+    
+</body>
+</html>

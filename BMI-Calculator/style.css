@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f6f8;
+}
+.container{
+
+    display: flex;
+    padding: 2rem 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 16px;
+   
+    background-color: white;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1); /* 0 mtlb na left offset na ryt..seedha neeche giregi
+    /* 8px shadow neeche giregi 30px mtlb kitna blur hoga // offset-x offset-y blur radius spread radius color; */
+    font-family: Poppins;
+    min-width: 350px;
+    max-width: 420px;
+   
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #333;
+
+}
+.input-group{
+    display: flex;
+    gap: 10px;
+}
+.input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+.input:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+}
+#calcBttn{
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+}
+#calcBttn:hover{
+    cursor: pointer;
+    background-color: #6b6a6a;
+    font-weight: 200;
+    color: white;
+    transition: all 0.3s ease;
+
+}
+#weight{
+    margin-right: 10px;;
+}
+.outputs{
+    display: block;
+    visibility: none;
+}
+.visible{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.5rem;
+   background-color: #f2f1f1;
+   padding: 1rem;
+   margin-top: 1rem;
+   border-radius: 10px;
+     box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+     transition: all 0.3s ease;
+  min-width: 200px;
+  max-width: 300px;
+  color: #333;
+  font-weight: 500;
+ 
+}
