@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: rgb(228, 171, 97);
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+}
+h1{
+    color: rgb(24, 69, 114);
+    font-family: cursive;
+}
